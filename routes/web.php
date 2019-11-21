@@ -13,6 +13,13 @@
 Route::get('/', function () {
     return view('ls.index');
 });
+//admin routes
+Route::get('/admin','AdminController@show');
+Route::get('/newLawyer','AdminController@createLawyer');
+Route::post('admin_account_login','AdminController@account_login');
+Route::get('/viewLawyers','AdminController@allLawyers');
+Route::get('/addClient','AdminController@createClient');
+Route::get('/viewClients','AdminController@allClients');
 Route::post('/store_history','CaseHistoryController@store');
 Route::get('/add_history','CaseHistoryController@create');
 Route::get('/login','UserController@create');
