@@ -36,8 +36,7 @@ class UserController extends Controller
         ]);
         $input=$request->all();
         $user=User::create($input);
-        auth()->login($user);
-        return redirect('/');
+        return redirect('/login')->with(['success','Your account has been created..Please login..']);
     }
 
     public function login(){
@@ -56,7 +55,7 @@ class UserController extends Controller
         return view('ls.profile')->with('profile',$profile);
       }
     public function update_profile(Request $request){
-      
+
       $request->validate([
         'profile_img'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
       ]);

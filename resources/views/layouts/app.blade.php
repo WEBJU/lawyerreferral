@@ -17,6 +17,7 @@
   <!-- Custom styles for this template -->
   <link href="{{asset('css/modern-business.css')}}" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -86,6 +87,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('js/modal-form.js')}}"></script>
 
   </body>
 
