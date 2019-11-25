@@ -1,0 +1,57 @@
+{
+    "success": true,
+    "lawyers": [
+        {
+            "id": 1,
+            "name": "James Orengo",
+            "email": "jorengo@gmail.com",
+            "phone": "0717908148",
+            "location": "Nairobi",
+            "specialization": "Constitutional Law",
+            "working_days": "Mon-Fri",
+            "license_no": "10203040",
+            "experience": "7",
+            "profile_img": "http://10.20.140.21/lawyerreferral/public/uploads/avatars/1574356264.jpg",
+            "password": "$2y$10$eQjwvgpXza9ghwkCKypOLuhp/3KrTA6.E.VVT6fw7VIdbQnRrccdi"
+        },
+        {
+            "id": 2,
+            "name": "Kethi Kilonzo",
+            "email": "kkilonzo@gmail.com",
+            "phone": "0713141516",
+            "location": "Kitui",
+            "specialization": "Criminal Law",
+            "working_days": "Mon and Wed",
+            "license_no": "90098674",
+            "experience": "5",
+            "profile_img": "http://10.20.140.21/lawyerreferral/public/uploads/avatars/1574357046.jpg",
+            "password": "$2y$10$HZAzgZ7.XlmXb9R7Wsew3uVnouwY8Mn0Hfc04N4245Ja6bXuivBmi"
+        },
+        {
+            "id": 5,
+            "name": "Damaris Mukala",
+            "email": "mukala@gmail.com",
+            "phone": "0713141512",
+            "location": "Nairobi",
+            "specialization": "Environmental Law",
+            "working_days": "Mon-Fri",
+            "license_no": "90098674",
+            "experience": "4",
+            "profile_img": "http://10.20.140.21/lawyerreferral/public/uploads/avatars/1574686513.jpg",
+            "password": "$2y$10$J7rzoaEVk7Y8oML9F7bFUOdWqExLkIXDne2AFBszRqKurh99AhSt."
+        },
+        {
+            "id": 6,
+            "name": "Rehema Khasim",
+            "email": "khasim@gmail.com",
+            "phone": "071234567",
+            "location": "Kiambu",
+            "specialization": "Criminal Law",
+            "working_days": "Mon-Fri",
+            "license_no": "90098674",
+            "experience": "5",
+            "profile_img": "http://10.20.140.21/lawyerreferral/public/uploads/avatars/1574686650.jpg",
+            "password": "$2y$10$DT2XQ8303DSbhcHl8pBsm.wKuKFvs.ih8lE694cVEsyxSd8yhka8C"
+        }
+    ]
+}

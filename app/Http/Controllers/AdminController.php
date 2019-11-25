@@ -43,7 +43,7 @@ class AdminController extends Controller
     }
 
     public function edit($id){
-      $user=
+      // $user=
       return view('admin.pages.edit_user');
     }
     public function deleteUser($id){

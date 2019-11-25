@@ -42,7 +42,7 @@
                        data-token="{{csrf_token()}}">
                         Delete
                     </a>
-                <a href="" class="btn btn-info">View Case History</a>
+                <a href="" class="btn btn-info btn-sm">Lawyer History</a>
               </td>
             </tr>
           @endforeach

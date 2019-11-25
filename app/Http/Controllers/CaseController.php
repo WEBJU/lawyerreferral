@@ -28,7 +28,7 @@ class CaseController extends Controller
      }
   }
 
-  // public function recommendations($email,$case_type){
+  public function recommendations($email,$case_type){
 
      $cases=Cases::all()->where('client_email',$email)->where('case_type',$case_type);
      foreach($cases as $case) {
