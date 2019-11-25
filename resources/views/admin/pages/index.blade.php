@@ -223,12 +223,12 @@
             },
       success: function ()
       {
+          Alert("Record Erased Successfully");
           console.log("it Work");
       },
       error: function (data) {
         console.error('Error:', data);
       }      
-      //data: {_method: 'delete', _token: $('#delete_token').val())}
       });
     });
 
