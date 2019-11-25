@@ -36,7 +36,7 @@
                        data-href="{{url('update_user/'.$user->id)}}">
                         Edit</a>
                     <input type="hidden" name="_method" value="delete"/>
-                    <a class="btn btn-danger btn-sm" title="Delete" data-toggle="modal"
+                    <a class="btn btn-danger btn-sm openDelete" title="Delete" data-toggle="modal"
                        href="#modalDelete"
                        data-id="{{$user->id}}"
                        data-token="{{csrf_token()}}">
@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal -->
+    <!-- Delete Modal -->
     <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" data-backdrop="static">
         <div class="modal-dialog" role="document">
             <div class="modal-content" id="modal_content"></div>
@@ -76,6 +76,12 @@
                     <button type="button" class="btn btn-danger"
                             onclick="ajaxDelete('{{url('/delete_user')}}/'+$('#delete_id').val(),$('#delete_token').val())">
                         Delete
+                    </button>
+                     <button type="button" class="btn btn-danger deleteButton" id="deleteButton" 
+                            onclick="
+                              console.log('monday',$('#delete_id').val());
+                            ">
+                        Delete 2
                     </button>
                 </div>
             </div>

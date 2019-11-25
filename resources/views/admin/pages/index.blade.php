@@ -6,6 +6,7 @@
   <title>Lawyer Referral</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -197,5 +198,40 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+<!-- MY SCRIPT -->
+<script type="text/javascript">
+  // on delete event - anchor tag
+  $(document).on("click",".openDelete", function(){
+    var id = $(this).data('id');
+    var token = $(this).data('token');
+    $(".modal-dialog #delete_id").val(id);
+    $(".modal-dialog #delete_token").val(token);
+  })
+
+  // on delete event - button
+  $(document).on("click",".deleteButton", function(){
+    var id = $('#delete_id').val();
+    console.log("DELETE THIS" + id);
+    $.ajax({
+      type: "POST",
+      url: '/delete_user/'+id,
+      data: {
+                '_token': $('meta[name=csrf-token]').attr("content"),
+                '_method': 'DELETE',
+                 "id": id
+            },
+      success: function ()
+      {
+          console.log("it Work");
+      },
+      error: function (data) {
+        console.error('Error:', data);
+      }      
+      //data: {_method: 'delete', _token: $('#delete_token').val())}
+      });
+    });
+
+</script>
 </body>
 </html>
